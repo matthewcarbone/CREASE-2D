@@ -1,7 +1,7 @@
 # Title: Computational Reverse Engineering Analysis of Scattering Experiments Method for Interpretation of 2D Small-Angle Scattering Profiles (CREASE-2D)
 
 ## Project Description:
-The goal of this project is to find the relation between scattering profile of a structure to it's structural properties. For that we first solved of getting scattering profile from given structural features using machine learning and using genetic algorithms we found the possible structural features for given scattering profile using machine learning model as scattering profile generator in it. We used SSIM as our loss function in GA. The overall workflow is shown in TOC figure ![CREASE-2D](https://github.com/arthijayaraman-lab/CREASE-2D/blob/main/TOC.pdf)
+The goal of this project is to find the relation between scattering profile of a structure to it's structural properties. For that we first solved of getting scattering profile from given structural features using machine learning and using genetic algorithms we found the possible structural features for given scattering profile using machine learning model as scattering profile generator in it. We used SSIM as our loss function in GA. The overall workflow is shown in TOC figure ![CREASE-2D](https://github.com/arthijayaraman-lab/CREASE-2D/blob/main/TOC.png)
 
 Here we list all the codes that were used in the development of CREASE-2D.
 
