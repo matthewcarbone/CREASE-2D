@@ -10,14 +10,12 @@ The manuscript is currently under review.
 
 Here we list all the codes that were used in the development of CREASE-2D.
 
-__sampling_structural_features.py__: This generates a list of structural features as described in the main manuscript, used to create the dataset. These values were used as input to generate 3D structures using CASGAP method.
+__sampling_structural_features.py__: This python script generates a list of structural features as described in the main manuscript, and is used to create the dataset for training and validation of the ML model. The structural featuresare directly used as inputs to generate 3D structures using the [CASGAP](https://github.com/arthijayaraman-lab/casgap) method. The CSV file __Features_6.csv__ contains a tabulated list of 6 structural features:  R<sub>μ</sub>, R<sub>σ</sub>, γ<sub>μ</sub>, γ<sub>σ</sub>, κ and φ, that were used in the dataset shared in the main manuscript.
 
-__Features_6.csv__: This csv file contains the six structural features, i.e., R<sub>μ</sub>, R<sub>σ</sub>, γ<sub>μ</sub>, γ<sub>σ</sub>, κ, φ The first five features are given as input to [CASGAP](https://github.com/arthijayaraman-lab/casgap) to generate 3D structure and φ is calculated after generating the structure.
+__scattering_calc.m__: This MATLAB script contains the parallelized code which calculates the 2D scattering profiles for the structures generated using the CASGAP method.
 
-__scattering_calc.m__: This code calculates the 2D scattering profiles for the structures created using CASGAP method.
+__Data_Processing.ipynb__: This Jupyter Notebook contains steps used to process the dataset of scattering profiles and all structural features, to split into training and testing, and to subsample the data, as described in the manuscript, which is then used as input for training the XGBoost model.
 
-__Data_Processing.ipynb__: This Notebook contains the processing of scattering profiles and structural features dividing into train, grid sampling of scattering profiles, making a tabular dataset to train our XGBoost model. For more details please read our [manuscript](https://arxiv.org/abs/2401.12381).
+__XGBoost_training.py__: This python script contain the implementation of Bayesian optimization search using hyperparameter tuning and training the XGBoost model. The trained model is provided as a zip file _XGBoost%20Model.zip_.
 
-__XGBoost_training.py__: This .py file contains hyperparameter tuning using bayesian optimization and training the XGBoost model. The trained model is given in [here](https://github.com/arthijayaraman-lab/CREASE-2D/blob/main/XGBoost%20Model.zip)
-
-__crease2D_GA_script.py__: This code is the execution of the GA in the CREASE-2D method, which uses an input scattering profile and optimizes the structural features that best match the input scattering profile. It uses the trained ML model.
+__crease2D_GA_script.py__: This python script describes the coded implementation of the genetic algorithm used to execute the CREASE-2D method. The code uses as input an 'experimnetal' scattering profile and optimizes the structural features that when provided to the trained ML model, provide 'computed' scattering profiles which closely resemble the input 'experimental' scattering profile.
