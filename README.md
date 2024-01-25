@@ -16,6 +16,6 @@ __scattering_calc.m__: This MATLAB script contains the parallelized code which c
 
 __Data_Processing.ipynb__: This Jupyter Notebook contains steps used to process the dataset of scattering profiles and all structural features, to split into training and testing, and to subsample the data, as described in the manuscript, which is then used as input for training the XGBoost model.
 
-__XGBoost_training.py__: This python script contain the implementation of Bayesian optimization search using hyperparameter tuning and training the XGBoost model. The trained model is provided as a zip file __XGBoost Model.zip__.
+__XGBoost_training.py__: This python script contain the implementation of Bayesian optimization search using hyperparameter tuning and training the XGBoost model. The trained model is provided as a zip file: __XGBoost Model.zip__.
 
 __crease2D_GA_script.py__: This python script describes the coded implementation of the genetic algorithm used to execute the CREASE-2D method. The code uses as input an 'experimnetal' scattering profile and optimizes the structural features that when provided to the trained ML model, provide 'computed' scattering profiles which closely resemble the input 'experimental' scattering profile.
