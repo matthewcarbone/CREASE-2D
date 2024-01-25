@@ -1,7 +1,9 @@
-# Title: Computational Reverse Engineering Analysis of Scattering Experiments Method for Interpretation of 2D Small-Angle Scattering Profiles (CREASE-2D)
+# Computational Reverse Engineering Analysis of Scattering Experiments Method for Interpretation of 2D Small-Angle Scattering Profiles (CREASE-2D)
 
-## Project Description:
-The goal of this project is to find the relation between scattering profile of a structure to it's structural properties. For that we first solved of getting scattering profile from given structural features using machine learning and using genetic algorithms we found the possible structural features for given scattering profile using machine learning model as scattering profile generator in it. We used SSIM as our loss function in GA. The overall workflow is shown in TOC figure ![CREASE-2D](https://github.com/arthijayaraman-lab/CREASE-2D/blob/main/TOC.png)
+## Brief Description:
+CREASE-2D is the extension of the CREASE Method which stands for Computational Reverse Engineering Analysis for Scattering Experiments, and is used to interpret detailed structural information, typically of amorphous soft materials, from complete 2D scattering profiles, that are outputed as measurements of small-angle scattering experiments. This method is based on the identification of structure in terms of *structural features*, which is a low-dimensional representation of the complete 3D structure. In CREASE-2D we have used a trained machine learning (ML) model to predict scattering profiles directly from these structural features. When CREASE-2D is provided as input an 'experimental' scattering profile, with unknown structural details, the CREASE-2D workflow uses a genetic algorithm to arrive at several candidate structural features, each of which will generate a similar scattering profile. The CREASE-2D workflow uses the trained ML model to predict the scattering profiles of these candidates in a time-efficient manner. All the key details about this work can be found in the accompanying paper: https://arxiv.org/abs/2401.12381
+
+![CREASE-2D](https://github.com/arthijayaraman-lab/CREASE-2D/blob/main/TOC.png)
 
 Here we list all the codes that were used in the development of CREASE-2D.
 
