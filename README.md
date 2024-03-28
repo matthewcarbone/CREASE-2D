@@ -3,8 +3,7 @@
 ## Brief Description:
 CREASE-2D is the extension of the [CREASE](https://github.com/arthijayaraman-lab/crease_ga) Method which stands for Computational Reverse Engineering Analysis for Scattering Experiments, and is used to interpret detailed structural information, typically of amorphous soft materials, from complete 2D scattering profiles, that are outputed as measurements of small-angle scattering experiments. Isotropic structures in soft materials are interpreted from azimuthally averaged 1D scattering profiles; to understand anisotropic spatial arrangements, however, one has to interpret the entire 2D SAS profile, I(q,θ). The CREASE-2D method interprets I(q,θ) as is, without any averaging about angles, and outputs the relevant structural features using genetic algorithm optimization and an XG-Boost based surrogate ML model for computed scattering profile calculation.
 
-All the key details about this work can be found in the pre-print: [(https://arxiv.org/abs/2401.12381)](https://arxiv.org/abs/2401.12381)
-The manuscript is currently under review.
+All the key details about this work can be found in the open access published manuscript in [JACS Au](https://pubs.acs.org/doi/10.1021/jacsau.4c00068).
 
 ![CREASE-2D](https://github.com/arthijayaraman-lab/CREASE-2D/blob/main/TOC.png)
 
