@@ -5,7 +5,7 @@ CREASE-2D is the extension of the [CREASE](https://github.com/arthijayaraman-lab
 
 All the key details about this work can be found in the open access published manuscript in [JACS Au](https://pubs.acs.org/doi/10.1021/jacsau.4c00068).
 
-![CREASE-2D](https://github.com/arthijayaraman-lab/CREASE-2D/blob/main/TOC.png)
+![CREASE-2D](https://github.com/arthijayaraman-lab/CREASE-2D/blob/main/assets/TOC.png)
 
 Here we list all the codes that were used in the development of CREASE-2D.
 
