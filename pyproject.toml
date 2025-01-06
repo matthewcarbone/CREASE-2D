@@ -17,7 +17,7 @@ path = "crease/_version.py"
 
 [tool.ruff]
 line-length = 80
-exclude = ["composer/_version.py"]
+exclude = ["crease/_version.py"]
 
 [tool.ruff.format]
 quote-style = "double"
