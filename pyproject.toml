@@ -12,7 +12,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.version]
-path = "composer/_version.py"
+path = "crease/_version.py"
 
 
 [tool.ruff]
