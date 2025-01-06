@@ -1,0 +1,26 @@
+[project]
+name = "crease"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+dynamic = ["version"]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "composer/_version.py"
+
+
+[tool.ruff]
+line-length = 80
+exclude = ["composer/_version.py"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+docstring-code-line-length = 60
