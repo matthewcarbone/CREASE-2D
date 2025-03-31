@@ -3,9 +3,24 @@ name = "crease"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "loguru>=0.7.3",
+    "monty",
+    "numpy>=2.2.1",
+    "scipy>=1.15.0",
+]
 dynamic = ["version"]
 
+[project.optional-dependencies]
+test = [
+    "codecov>=2.1.13",
+    "coverage>=7.6.10",
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+]
+
+[project.scripts]
+run_example = "crease.entrypoint:run_example"
 
 [build-system]
 requires = ["hatchling"]
@@ -13,7 +28,6 @@ build-backend = "hatchling.build"
 
 [tool.hatch.version]
 path = "crease/_version.py"
-
 
 [tool.ruff]
 line-length = 80
@@ -24,3 +38,6 @@ quote-style = "double"
 indent-style = "space"
 docstring-code-format = true
 docstring-code-line-length = 60
+
+[tool.uv.sources]
+monty = { git = "https://github.com/matthewcarbone/monty", rev = "master" }
